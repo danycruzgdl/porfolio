@@ -1,0 +1,17 @@
+.conteiner {
+    width: 80%;
+    margin: auto;
+    /* border: solid; */
+    
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    padding: 10px;
+    width: 50%;
+}
