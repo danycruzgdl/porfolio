@@ -2,28 +2,120 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
 }
 
 body {
     background: rgb(250, 243, 214);
 }
 
+
+/* _______NAVEGATION_________ */
 .nav {
+    background: #000000;
+    height:50px;
+    width:100%;
+    color: #fff; 
+    display: flex;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    margin:10px;
+}
+
+.menu-bar {
+  justify-content: space-between;
+  display: flex;
+}
+
+
+/* _______BANNER _________ */
+.banner {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+
+
+
+.illustracion img {
+    width: 100%; 
+}
+
+.presentation{
+    margin: auto;
+    text-align: center;  
+}
+
+ .texto-header {
+     margin-bottom: 30px;
+     font-size: 1.5rem;
+ }
+
+.icons {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
 
 }
 
-nav. a.hide {
+/* _______ABOUT-ME_________ */
+.about-me {
+    background: rgb(243, 243, 243);
+    padding: 40px;
+}
 
+.about-text {
+    padding: 20px;
+}
+
+.about-me img {
+    width: 100%; 
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-text p {
+    padding: 30px;
+}
+
+/* _______WORKS_________ */
+
+.title {
+    background:#fff;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+   padding:20px;
+   font-family: sans-serif;
+   font-weight: bold;
 }
 
 
-#menu {
-    position: fixed;
-    height: 100v;
-    width: 200px;
-    background-color: black;
-    color:white;
+.card i {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    align-content: center;
+   margin:35px;
 }
+
+.card-work {
+    background: #fff;
+    padding: 15px;
+    height:100%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    color: #000000;
+    text-align: center;
+}
+
 
 
 /* _______COMPONENTS_________ */
@@ -31,8 +123,106 @@ nav. a.hide {
 .card {
     background: #fff;
     padding: 15px;
-    height: 100%;
+    height:200px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     color: #000000;
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 40px;
+    background: rgb(255, 4, 4);
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    margin: 50px;
+}
+
+.btn-aline {
+ display:flex;
+justify-content: center;   
+}
+
+/* _______FOOTER_________ */
+.footer {
+    background: rgb(0, 0, 0);
+    }
+    
+    .footer {
+        height:50px;
+        width:100%;
+        background-color: black;
+        color:white;
+    }
+
+.footer p {
+    text-align: center;
+    color:#000000;
+
+}
+
+/* _______CONTACT_________ */
+
+footer .contacto .titulo {
+	font-size: 34px;
+	line-height: 34px;
+	margin-bottom: 40px;
+	font-weight: 300;
+	color: #323068;
+	text-align: center; 
+}
+
+footer .contacto .formulario {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"],
+footer .contacto .formulario textarea {
+	border:2px solid #cecece;
+	border-radius:5px;
+	padding:15px 20px;
+	font-size: 20px;
+	color: #a4a4a4; 
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"] {
+	width: 45%;
+	margin-bottom: 15px;
+
+}
+
+footer .contacto .formulario textarea {
+	width: 100%;
+	height: 100px;
+	min-width: 96%;
+	max-width: 96px;
+	min-height: 96px;
+	max-height: 300px;
+	margin-bottom: 15px;
+}
+
+footer .contacto .formulario .boton {
+	margin:auto;
+	color:#fff;
+	background: #3895ea;
+	border-radius: 3px;
+	padding: 15px 40px;
+	border:none;
+	cursor:pointer;
+}
+
+footer .contacto .formulario .boton:hover{
+	background: #387bea;
+}
+
+footer .contacto .formulario input[type="text"]:focus,
+footer .contacto .formulario input[type="email"]:focus,
+footer .contacto .formulario textarea:focus {
+              border:2px solid #cecece;
 }
 
